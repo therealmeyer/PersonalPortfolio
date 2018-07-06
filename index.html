@@ -22,8 +22,8 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li>
-								<a href="#">Layouts</a>
-								<ul>
+								<a href="#four">Projects</a>
+								<!-- <ul>
 									<li><a href="left-sidebar.html">Left Sidebar</a></li>
 									<li><a href="right-sidebar.html">Right Sidebar</a></li>
 									<li><a href="no-sidebar.html">No Sidebar</a></li>
@@ -36,10 +36,11 @@
 											<li><a href="#">Option 4</a></li>
 										</ul>
 									</li>
-								</ul>
+								</ul> -->
 							</li>
+							<!-- <li><a href="#" class="button primary">Sign Up</a></li> -->
+							<li><a href="#five">Contact</a></li>
 							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -126,7 +127,7 @@
 							<li><a href="#" class="button">Resume</a></li>
 						</ul>
 					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
+					<a href="#four" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- Three -->
@@ -155,15 +156,19 @@
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall">
+                  <a style="color: transparent" class="hover-link" href="sonicstratus.html" >
                   <span class="icon alt major fa-soundcloud"></span>
-                  <a href="no-sidebar.html" class="link-project">
+                  </a>
+                  <a href="sonicstratus.html" class="link-project">
 									<h3>Sonic Stratus</h3>
                   <p>Web Application inspired by SoundCloud that allows users to share and interact with music.</p>
                   </a>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-                  <span class="icon alt major fa-bitcoin"></span>
-                  <a href="no-sidebar.html" class="link-project">
+                  <a style="color: transparent" class="hover-link" href="mICO.html" >
+                    <span class="icon alt major fa-bitcoin"></span>
+                  </a>
+                  <a href="mICO.html" class="link-project">
 									<h3>mICO</h3>
                   <p>iOS Application that allows users to track Initial Coin Offerings and local cryptocurrency events</p>
                   </a>
@@ -204,20 +209,45 @@
 				<section id="five" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
-							<h2>Magna faucibus lorem diam</h2>
-							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
-						</header>
-						<form method="post" action="#" class="cta">
+							<h2>Contact</h2>
+            </header>
+            <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbw0j8bsd4pDL-WvArdbxbMbDx8RETdUuwFasDWk_Q/exec">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="name" id="name" value="" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-xsmall">
+                      <input type="email" name="email" id="email" value="" required placeholder="Email" />
+                      <span id="email-invalid" style="display:none">
+                        Must be a valid email address</span>
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="primary" /></li>
+											</ul>
+										</div>
+									</div>
+                </form>
+                <div style="display:none;" id="thankyou_message">
+                  <h2>
+                    <em>Thanks</em> for contacting me! I will get back to you shortly!
+                  </h2>
+                </div>
+              <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+						<!-- <form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
 								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
 							</div>
-						</form>
+						</form> -->
 					</div>
 				</section>
 
 			<!-- Footer -->
-				<footer id="footer">
+				<footer id="footer" style="padding-bottom: 35px; padding-top: 35px">
 					<ul class="icons">
 						<!-- <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> -->
 						<!-- <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li> -->
@@ -227,7 +257,7 @@
 						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Ryan Meyer. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
