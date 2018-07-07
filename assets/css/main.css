@@ -421,6 +421,24 @@ input, select, textarea {
   margin-bottom: 35px;
   /* width: 35px; */
 }
+
+.serp-gifs-container {
+  display: flex;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+.serp-gifs-container img {
+  margin: 0;
+  width: 33.333%;
+  height: 33.333%;
+  flex-basis: 20%;
+  flex: 0 1 calc(20%);
+  margin-bottom: 35px;
+  /* width: 35px; */
+}
+
+
 /* Loader */
 
 	@-moz-keyframes spinner-show {
